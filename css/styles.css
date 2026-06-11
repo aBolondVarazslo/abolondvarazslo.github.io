@@ -456,7 +456,7 @@ section {
 
 .booking-panel {
     background: var(--forest);
-    padding: 3rem 2.5rem;
+    padding: 2.5rem 2.5rem;
     color: var(--ivory);
 }
 
@@ -557,4 +557,169 @@ footer {
     .scroll-line {
         animation: none;
     }
+}
+
+
+
+
+
+/* GALLERY */
+/* ── PAGE HERO ── */
+.gallery-hero {
+    background: var(--forest);
+    padding: 7rem 2rem 4rem;
+    text-align: center;
+}
+
+.gallery-hero .eyebrow {
+    font-size: 0.72rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 1rem;
+}
+
+.gallery-hero h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 300;
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    color: var(--ivory);
+    line-height: 1.1;
+    margin-bottom: 1rem;
+}
+
+.gallery-hero h1 em {
+    font-style: italic;
+    color: var(--sage);
+}
+
+.gallery-hero p {
+    color: var(--sage);
+    font-size: 0.9rem;
+    letter-spacing: 0.08em;
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+.gold-divider {
+    width: 48px;
+    height: 1px;
+    background: var(--gold);
+    margin: 1.4rem auto;
+}
+
+/* ── GALLERY GRID ── */
+.gallery-section {
+    padding: 5rem 1.5rem;
+}
+
+/* Card overrides */
+.gallery-card {
+    border: none;
+    border-radius: 0;
+    background: #fff;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(28, 58, 43, 0.15);
+}
+
+.gallery-card .card-img-top {
+    border-radius: 0;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    background: var(--light-sage);
+    /* Placeholder colour shown until real images are added */
+}
+
+/* Image placeholder (shown when no real src) */
+.img-placeholder {
+    aspect-ratio: 4 / 5;
+    background: var(--light-sage);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    color: var(--sage);
+}
+
+.img-placeholder svg {
+    opacity: 0.5;
+}
+
+.img-placeholder span {
+    font-size: 0.7rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    opacity: 0.6;
+}
+
+.gallery-card .card-body {
+    padding: 1.2rem 1.4rem 1.4rem;
+    border-top: 2px solid var(--gold);
+}
+
+.gallery-card .card-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.15rem;
+    font-weight: 400;
+    color: var(--forest);
+    margin-bottom: 0.3rem;
+}
+
+.gallery-card .card-text {
+    font-size: 0.82rem;
+    color: #6a6a6a;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.card-tag {
+    display: inline-block;
+    font-size: 0.65rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 0.4rem;
+}
+
+/* ── CTA STRIP ── */
+.gallery-cta-strip {
+    background: var(--forest);
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.gallery-cta-strip p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(1.2rem, 3vw, 1.8rem);
+    font-weight: 300;
+    font-style: italic;
+    color: var(--light-sage);
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-gallery-cta {
+    display: inline-block;
+    padding: 0.9rem 2.8rem;
+    border: 1px solid var(--gold);
+    color: var(--gold);
+    font-size: 0.75rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background 0.3s, color 0.3s;
+    border-radius: 0;
+}
+
+.btn-gallery-cta:hover {
+    background: var(--gold);
+    color: var(--forest);
 }
